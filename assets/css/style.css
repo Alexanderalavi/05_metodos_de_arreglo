@@ -9,5 +9,13 @@ body {
 
 .valores{
     display: flex;
-    margin-left: -200px;
+    flex-direction: row;
+  justify-content: space-between;
+ column-gap: 200px;
+ margin-top: 50px;
+}
+.listados{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
 }
