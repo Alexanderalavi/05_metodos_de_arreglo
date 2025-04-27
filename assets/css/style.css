@@ -19,3 +19,20 @@ body {
     flex-direction: row;
     column-gap: 50px;
 }
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-left: -50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
