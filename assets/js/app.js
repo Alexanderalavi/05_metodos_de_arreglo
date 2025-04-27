@@ -22,7 +22,7 @@ function renderTareas() {
     let html = "";
     dataTareas.forEach((tarea) => {
         html += `
-            <li class="listaTarea">
+            <li>
                     <p>${tarea.id}</p>
                     <p class="${tarea.realizada ? "realizada" : ""}">${tarea.nombre}</p>
                     <input class="tarea-revisar" type="checkbox" data-id="${tarea.id}" ${tarea.realizada ? "checked" : ""}>
@@ -59,7 +59,7 @@ function renderTareas() {
 function agregarTarea() {
     const nuevaTarea = inputTarea.value
     if (nuevaTarea.trim() !== "") {
-        const id = parseInt(Date.now().toString().slice(-4))
+        const id = parseInt(Date.now().toString().slice(-3))
         dataTareas.push({ id: id, nombre: nuevaTarea, realizada: false })
     }
     inputTarea.value = ""
